@@ -2,7 +2,7 @@
 
 A DNF/YUM repository for installing Slack on RHEL, CentOS, and Fedora Linux.
 
-You can use the slack-repo RPM from [Copr](https://copr.fedorainfracloud.org/coprs/jdoss/slack-repo/) or you can drop the slack.repo file from this repository into `/etc/yum.repos.d` to enable it. From there, you can run `sudo dnf install slack` or `sudo yum install slack` to install the Slack for Linux client from Slack's [packagecloud](https://packagecloud.io/slacktechnologies/slack/) yum repository to enjoy automatic GPG verified RPM package updates.
+You can use the slack-repo RPM from [Copr](https://copr.fedorainfracloud.org/coprs/rocketraman/slack-repo/) or you can drop the slack.repo file from this repository into `/etc/yum.repos.d` to enable it. From there, you can run `sudo dnf install slack` or `sudo yum install slack` to install the Slack for Linux client from Slack's [packagecloud](https://packagecloud.io/slacktechnologies/slack/) yum repository to enjoy automatic GPG verified RPM package updates.
 
 ### Why should I use this repository?
 
@@ -16,7 +16,7 @@ TL;DR: Having automatic Slack for Linux package updates and verifying the GPG si
 #### Copr Install
 
 ```
-sudo dnf copr enable jdoss/slack-repo
+sudo dnf copr enable rocketraman/slack-repo
 sudo dnf install slack-repo
 sudo dnf install slack
 ```
@@ -24,7 +24,7 @@ sudo dnf install slack
 #### Manual Install
 
 ```
-git clone git@github.com:jdoss/slack-repo.git
+git clone git@github.com:rocketraman/slack-repo.git
 cd slack-repo
 sudo cp slack.repo /etc/yum.repos.d/slack.repo
 sudo dnf install slack
@@ -35,6 +35,7 @@ sudo dnf install slack
 MIT License
 
 Copyright (c) 2019 Joe Doss
+Copyright (c) 2022 Raman Gupta
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
